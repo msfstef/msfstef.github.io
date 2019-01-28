@@ -1,0 +1,38 @@
+.Landing{
+    background-color: #eeccff;
+    height: 100%;
+}
+
+.logo {
+    width: 30vmin;
+    max-width: 200px;
+}
+
+@keyframes logoRotate {
+    0%   {transform:rotate(0deg);}
+    25%  {transform:rotate(-30deg);}
+    100% {transform:rotate(360deg);}
+}
+  
+.logo.active {
+    animation-name: logoRotate;
+    animation-duration: 1s;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-content: center;
+}
+
+
+.item {
+    grid-column: span 12;
+}
+
+
+.social a {
+    margin: 5px;
+}
