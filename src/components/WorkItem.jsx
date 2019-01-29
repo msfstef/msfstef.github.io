@@ -8,11 +8,16 @@ class WorkItem extends Component {
             
             <div className='WorkItem'>
                 <Link className={this.props.itemName + ' link'}
-                    to={"/" + this.props.itemName}>
-                <img className={this.props.itemName + ' image'}
-                    src='https://c1.staticflickr.com/5/4845/30794937597_8a527efc46_b.jpg'
-                    alt={this.props.itemName} />
-                
+                        to={"/" + this.props.itemName}>
+                <div className='workImageContainer'>
+                    <img className={this.props.itemName + ' work image landscape'}
+                        src={'/assets/' + this.props.itemName + '_landscape.png'}
+                        alt={this.props.itemName} />
+                    <img className={this.props.itemName + ' work image portrait'}
+                        src={'/assets/' + this.props.itemName + '_portrait.png'}
+                        alt={this.props.itemName} />
+                </div>
+
                 <div className='text'>
                     <h2>{this.props.itemTitle}</h2>
                     <p>{this.props.itemDesc}</p>

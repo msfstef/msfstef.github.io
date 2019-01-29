@@ -1,5 +1,4 @@
 .Landing{
-    background-color: #eeccff;
     height: 100%;
 }
 
@@ -19,7 +18,7 @@
     animation-duration: 1s;
 }
 
-.wrapper {
+.Landing.wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -28,7 +27,7 @@
 }
 
 
-.item {
+.landing.item {
     grid-column: span 12;
 }
 

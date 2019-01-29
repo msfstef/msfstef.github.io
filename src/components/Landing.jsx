@@ -17,13 +17,13 @@ class Landing extends Component {
     render() {
         return (
             <div className='wrapper Landing'>
-                <img className={"item logo " + (this.state.logoActive?"active":"")}
+                <img className={"landing item logo " + (this.state.logoActive?"active":"")}
                     onClick={() => {this.logoHandleClick()}}
                     src={'/assets/logo.svg'} alt="msfstef logo"/>
-                <Link className='item work' to="/work">Portfolio</Link>
-                <Link className='item about' to="/about">About</Link>
-                <Link className='item contact' to="/contact">Contact</Link>
-                <div className='item social'>
+                <Link className='landing item work' to="/work">Portfolio</Link>
+                <Link className='landing item about' to="/about">About</Link>
+                <Link className='landing item contact' to="/contact">Contact</Link>
+                <div className='landing item social'>
                     <a target="_blank" rel="noopener noreferrer" 
                         href="https://www.linkedin.com/in/stefanosmousafeiris/"> 
                         <i className="fa fa-linkedin"></i>

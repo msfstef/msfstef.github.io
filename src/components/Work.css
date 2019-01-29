@@ -1,7 +1,8 @@
-.wrapper {
+.Work.wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
+    height:100%
 }
 
 .WorkItem {
@@ -13,3 +14,5 @@
         grid-column: span 3;
     }
 }
+
+

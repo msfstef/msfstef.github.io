@@ -7,11 +7,11 @@ class Work extends Component {
         return (
             <div className='Work wrapper'>
                 <WorkItem
-                        itemName='Headbattle' 
+                        itemName='headbattle' 
                         itemTitle='Headbattle'
-                        itemDesc='A plain JS 1v1 football inspired game.'/>
+                        itemDesc='A plain JS 1v1 football inspired game.' />
                 <WorkItem
-                        itemName='Headbattle' 
+                        itemName='headbattle'
                         itemTitle='Headbattle'
                         itemDesc='A plain JS 1v1 football inspired game.'/>
             </div>
