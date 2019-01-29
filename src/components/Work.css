@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+}
+
+.WorkItem {
+    grid-column: span 9;
+}
+
+@media only screen and (min-width: 768px) {
+    .WorkItem {
+        grid-column: span 3;
+    }
+}

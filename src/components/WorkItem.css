@@ -1,0 +1,17 @@
+.WorkItem {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+}
+
+.text {
+    width: 70%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(0, 255, 100, 0.5);
+}

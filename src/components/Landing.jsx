@@ -26,14 +26,14 @@ class Landing extends Component {
                 <div className='item social'>
                     <a target="_blank" rel="noopener noreferrer" 
                         href="https://www.linkedin.com/in/stefanosmousafeiris/"> 
-                        <i class="fa fa-linkedin"></i>
+                        <i className="fa fa-linkedin"></i>
                     </a>
                     <a target="_blank" rel="noopener noreferrer" 
                         href="https://github.com/msfstef"> 
-                        <i class="fa fa-github"></i>
+                        <i className="fa fa-github"></i>
                     </a>
                     <a href="mailto:msfstef@gmail.com"> 
-                        <i class="fa fa-envelope"></i>
+                        <i className="fa fa-envelope"></i>
                     </a>
                 </div>
             </div>
