@@ -24,15 +24,18 @@ class Landing extends Component {
                 <Link className='landing item about' to="/about">About</Link>
                 <Link className='landing item contact' to="/contact">Contact</Link>
                 <div className='landing item social'>
-                    <a target="_blank" rel="noopener noreferrer" 
+                    <a className='landing item social'
+                        target="_blank" rel="noopener noreferrer" 
                         href="https://www.linkedin.com/in/stefanosmousafeiris/"> 
                         <i className="fa fa-linkedin"></i>
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" 
+                    <a className='landing item social'
+                        target="_blank" rel="noopener noreferrer" 
                         href="https://github.com/msfstef"> 
                         <i className="fa fa-github"></i>
                     </a>
-                    <a href="mailto:msfstef@gmail.com"> 
+                    <a className='landing item social'
+                        href="mailto:msfstef@gmail.com"> 
                         <i className="fa fa-envelope"></i>
                     </a>
                 </div>

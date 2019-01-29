@@ -2,9 +2,10 @@
     height: 100%;
 }
 
-.logo {
+.landing.logo {
     width: 30vmin;
     max-width: 200px;
+    margin-bottom: 2vmin;
 }
 
 @keyframes logoRotate {
@@ -24,6 +25,7 @@
     grid-template-rows: auto;
     justify-items: center;
     align-content: center;
+    grid-row-gap: 2vh;
 }
 
 
@@ -31,7 +33,30 @@
     grid-column: span 12;
 }
 
+.landing.item.social{
+    margin-top: 2vmin;
+}
 
 .social a {
-    margin: 5px;
+    margin: 15px;
+}
+
+
+.landing.item{
+    font-size: 5vmin;
+    font-weight: bold;
+    font-family: "Helvetica"
+}
+
+.landing.item:link {
+    text-decoration: none;
+}
+
+
+.landing.item:link, .landing.item:visited {
+    color: black;
+}
+  
+.landing.item:hover, .landing.item:active {
+    color: grey;
 }
