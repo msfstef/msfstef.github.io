@@ -14,6 +14,18 @@ class Work extends Component {
                         itemName='headbattle'
                         itemTitle='Headbattle'
                         itemDesc='A plain JS 1v1 football inspired game.'/>
+                <WorkItem
+                        itemName='headbattle'
+                        itemTitle='Headbattle'
+                        itemDesc='A plain JS 1v1 football inspired game.'/>
+                <WorkItem
+                        itemName='headbattle'
+                        itemTitle='Headbattle'
+                        itemDesc='A plain JS 1v1 football inspired game.'/>
+                <WorkItem
+                        itemName='headbattle'
+                        itemTitle='Headbattle'
+                        itemDesc='A plain JS 1v1 football inspired game.'/>
             </div>
         );
     }
