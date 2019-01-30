@@ -6,7 +6,8 @@ class WorkItem extends Component {
     render() {
         return (
             
-            <div className='WorkItem'>
+            <div className='WorkItem'
+                >
                 <Link className={this.props.itemName + ' worklink'}
                         to={"/" + this.props.itemName}>
                 <div className='workImageContainer'>
@@ -19,8 +20,8 @@ class WorkItem extends Component {
                 </div>
 
                 <div className='WorkItemText'>
-                    <h2>{this.props.itemTitle}</h2>
-                    <p>{this.props.itemDesc}</p>
+                    <h2 className='WorkItemTitle'>{this.props.itemTitle}</h2>
+                    <p className='WorkItemDesc'>{this.props.itemDesc}</p>
                 </div>
                 {/*
                 <Route exact path={"/" + this.props.itemName} 

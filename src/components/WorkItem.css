@@ -1,5 +1,24 @@
 .WorkItem {
     position: relative;
+    background-color: white;
+}
+
+.WorkItem:hover .work.image{
+    opacity: 0.4;
+}
+
+@media only screen and (min-width: 768px) {
+    .WorkItemDesc {
+        position: absolute;
+        opacity: 0;
+        
+    }
+
+    .WorkItem:hover .WorkItemDesc {
+        position:relative;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
 }
 
 .worklink:link, .worklink:visited {
@@ -13,7 +32,6 @@
 }
 
 
-
 .workImageContainer {
     display: flex; 
     align-items: center;
@@ -23,7 +41,8 @@
 
 .work.image {
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
+    transition: 0.5s ease;
 }
 
 .image.landscape {
@@ -51,9 +70,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background: rgba(116, 116, 116, 0.705);
+    background-color: rgba(116, 116, 116, 0.705);
+    padding: 2%;
 
-    font-size: 5vmin;
+    font-size: 100%;
     font-weight: bold;
-    font-family: "Helvetica"
+    font-family: "Helvetica";
+
+    transition: 0.5s ease;
 }
