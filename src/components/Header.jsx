@@ -17,7 +17,8 @@ class Header extends Component {
         }
 
         return (
-            <div className={"Header " + (this.state.toggle?"change":"")}>
+            <div className={"Header " + (this.state.toggle?"change":"")}
+                onClick={()=>{if(this.state.toggle){this.toggleMenu()}}}>
                 <Link className='landingLink' to="/">
                     <img className="navbar logo"
                         onClick={()=> {if(this.state.toggle){this.toggleMenu()}}}
@@ -32,9 +33,12 @@ class Header extends Component {
                 </div>
 
                 <div className={"navbar menu container " + (this.state.toggle?"change":"")}>
-                    <Link className='menu item work' to="/work">Portfolio</Link>
-                    <Link className='menu item about' to="/about">About</Link>
-                    <Link className='menu item contact' to="/contact">Contact</Link>
+                    <Link className='menu item work' to="/work"
+                        onClick={()=>{this.toggleMenu()}}>Portfolio</Link>
+                    <Link className='menu item about' to="/about"
+                        onClick={()=>{this.toggleMenu()}}>About</Link>
+                    <Link className='menu item contact' to="/contact"
+                        onClick={()=>{this.toggleMenu()}}>Contact</Link>
                 </div>
             </div>
         );
