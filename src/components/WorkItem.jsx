@@ -11,10 +11,10 @@ class WorkItem extends Component {
                         to={"/" + this.props.itemName}>
                 <div className='workImageContainer'>
                     <img className={this.props.itemName + ' work image landscape'}
-                        src={'/assets/' + this.props.itemName + '_landscape.png'}
+                        src={'/assets/' + this.props.itemName + '_landscape.PNG'}
                         alt={this.props.itemName} />
                     <img className={this.props.itemName + ' work image portrait'}
-                        src={'/assets/' + this.props.itemName + '_portrait.png'}
+                        src={'/assets/' + this.props.itemName + '_portrait.PNG'}
                         alt={this.props.itemName} />
                 </div>
 
