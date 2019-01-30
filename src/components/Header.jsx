@@ -31,7 +31,7 @@ class Header extends Component {
                     <div className="bar3"></div>
                 </div>
 
-                <div className={"menu container " + (this.state.toggle?"change":"")}>
+                <div className={"navbar menu container " + (this.state.toggle?"change":"")}>
                     <Link className='menu item work' to="/work">Portfolio</Link>
                     <Link className='menu item about' to="/about">About</Link>
                     <Link className='menu item contact' to="/contact">Contact</Link>
