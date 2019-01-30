@@ -14,7 +14,7 @@
     100% {transform:rotate(360deg);}
 }
   
-.logo.active {
+.landing.logo.active {
     animation-name: logoRotate;
     animation-duration: 1s;
 }
