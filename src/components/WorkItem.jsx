@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import './WorkItem.css'
+import './WorkItem.css';
 
 class WorkItem extends Component {
     render() {
         return (
             
-            <div className='WorkItem'
-                >
+            <div className='WorkItem'>
+                <a className={this.props.itemName + ' worklink'}
+                    target="_blank" rel="noopener noreferrer" 
+                    href="https://msfstef.github.io/headbattle"> 
+                {/*
                 <Link className={this.props.itemName + ' worklink'}
                         to={"/" + this.props.itemName}>
+                */}
                 <div className='workImageContainer'>
                     <img className={this.props.itemName + ' work image landscape'}
                         src={'/assets/' + this.props.itemName + '_landscape.PNG'}
@@ -26,8 +29,10 @@ class WorkItem extends Component {
                 {/*
                 <Route exact path={"/" + this.props.itemName} 
                         component={this.props.itemName} />
-                */}
+                
                 </Link>
+                */}
+                </a>
             </div>
         );
     }

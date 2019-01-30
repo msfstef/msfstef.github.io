@@ -11,12 +11,7 @@ class Header extends Component {
     toggleMenu = () => {
         this.setState({toggle: !this.state.toggle})
     }
-
-    logoAnimate = () => {
-        this.setState({logo_clicked: true})
-        setTimeout(()=>{this.setState({logo_clicked: false})}, 1000)
-    }
-
+    
     render() {
         if (window.location.pathname === '/') {
             return <div></div>
@@ -26,10 +21,9 @@ class Header extends Component {
             <div className={"Header " + (this.state.toggle?"change":"")}
                 onClick={()=>{if(this.state.toggle){this.toggleMenu()}}}>
                 <Link className='landingLink' to="/">
-                    <img className={(this.state.logo_clicked?"landing logo active":"navbar logo")}
+                    <img className="navbar logo"
                         onClick={()=> {
                             if(this.state.toggle){this.toggleMenu()};
-                            if(!this.state.logo_clicked){this.logoAnimate()};
                             }}
                         src={'/assets/logo.svg'} alt="msfstef logo"/>
                 </Link>

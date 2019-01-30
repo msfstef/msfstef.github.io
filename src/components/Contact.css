@@ -1,0 +1,115 @@
+.Contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(6, auto);
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.contactHeadings {
+    grid-column: 2;
+    grid-row: 3;
+    width: 60vmin;
+    margin-bottom: 3em;
+}
+
+.contactForm {
+    grid-column: 2;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 0.5em;
+    justify-items: center;
+    align-content: center;
+}
+
+.contactEmail {
+    width: 60vmin;
+    max-width: 20em;
+    grid-column: span 3;
+
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.contactText {
+    width: 60vw;
+    max-width: 50em;
+    height: 12em;
+    max-height: 40vmin;
+    grid-column: span 3;
+
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.contactEmail, .contactText {
+    font-family: monospace;
+    background-color: rgb(255, 255, 255);
+}
+
+.contactEmail:focus, .contactText:focus {
+    background-color: rgb(250, 250, 250);
+}
+
+.contactSend {
+    width: 6em;
+    height: 3em;
+    grid-column: 2;
+
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 14;
+
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: rgb(209, 209, 209);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+
+
+.contactSend span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.contactSend:hover span {
+    padding-right: 1em;
+  }
+  
+
+.contactSend span:after {
+    position: absolute;
+    content: '\00bb';
+    opacity: 0;
+    top: -0.06em;
+    right: -1em;
+    transition: 0.5s;
+}
+
+.contactSend:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+  
+.contactSend:active {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
