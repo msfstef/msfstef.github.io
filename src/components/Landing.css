@@ -33,14 +33,6 @@
     grid-column: span 12;
 }
 
-.landing.item.social{
-    margin-top: 2vmin;
-}
-
-.social a {
-    margin: 15px;
-}
-
 
 .landing.item{
     font-size: 5vmin;
@@ -48,10 +40,15 @@
     font-family: "Helvetica"
 }
 
+.landing.item.social{
+    margin-top: 2vmin;
+    font-size: 7vmin;
+    margin: 2vmin;
+}
+
 .landing.item:link {
     text-decoration: none;
 }
-
 
 .landing.item:link, .landing.item:visited {
     color: black;

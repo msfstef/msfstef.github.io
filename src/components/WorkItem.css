@@ -2,6 +2,16 @@
     position: relative;
 }
 
+.worklink:link, .worklink:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.worklink:hover, .worklink:active {
+    color: black;
+    text-decoration: none;
+}
+
 
 
 .workImageContainer {
@@ -34,7 +44,7 @@
     }
 }
 
-.text {
+.WorkItemText {
     width: 70%;
     position: absolute;
     top: 60%;
@@ -42,4 +52,8 @@
     transform: translate(-50%, -50%);
 
     background: rgba(116, 116, 116, 0.705);
+
+    font-size: 5vmin;
+    font-weight: bold;
+    font-family: "Helvetica"
 }

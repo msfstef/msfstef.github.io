@@ -7,7 +7,7 @@ class WorkItem extends Component {
         return (
             
             <div className='WorkItem'>
-                <Link className={this.props.itemName + ' link'}
+                <Link className={this.props.itemName + ' worklink'}
                         to={"/" + this.props.itemName}>
                 <div className='workImageContainer'>
                     <img className={this.props.itemName + ' work image landscape'}
@@ -18,7 +18,7 @@ class WorkItem extends Component {
                         alt={this.props.itemName} />
                 </div>
 
-                <div className='text'>
+                <div className='WorkItemText'>
                     <h2>{this.props.itemTitle}</h2>
                     <p>{this.props.itemDesc}</p>
                 </div>
