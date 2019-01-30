@@ -13,7 +13,8 @@ class Header extends Component {
     }
     
     render() {
-        if (window.location.pathname === '/') {
+        console.log(window.location.pathname)
+        if (window.location.hash === '#/') {
             return <div></div>
         }
 
