@@ -23,7 +23,7 @@ class Contact extends Component {
                             placeholder="Your email.." />
                     <textarea className='contactText' 
                             name="message" 
-                            placeholder="Your message (e.g. hi mr. stefanos, i like 
+                            placeholder="Your message.. (e.g. hi mr. stefanos, i like 
                                         your stuff make me something please.)"></textarea>
                     <button className='contactSend' 
                             type="submit"><span>SEND</span></button>
