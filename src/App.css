@@ -4,14 +4,32 @@
   width: 100%;
 }
 
+.page-enter .Work,
 .page-enter .Contact {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 
 }
+.page-enter-active .Work,
 .page-enter-active .Contact {
   opacity: 1;
 }
+
+.page-exit .Work,
+.page-exit .Contact {
+  position:absolute;
+  pointer-events: none;
+  margin: 0;
+  left: 0;
+  top: 0;
+  transition: opacity 0.5s;
+}
+
+.page-exit-active .Work,
+.page-exit-active .Contact {
+  opacity:0;
+}
+
 
 .page-enter .landing.item {
   opacity: 0;
@@ -53,4 +71,39 @@
 .page-enter-active .landing.item.logo {
   transform: none;
   width: 30vmin;
+}
+
+
+.page-exit .landing.item.logo {
+  z-index: 15;
+  pointer-events: none;
+  transition: transform 1s linear;
+  
+}
+
+.page-exit-active .landing.item.logo {
+  transform: scale(20);
+}
+
+.page-exit .Landing {
+  position:absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  z-index: 14;
+  background-color: #f9f9f8;
+  transition: opacity 1s ease-in;
+}
+
+.page-exit-active .Landing {
+  opacity: 0;
+}
+
+.page-exit .landingWrapper {
+  pointer-events: none;
+  transition: opacity .3s ease-out;
+}
+
+.page-exit-active .landingWrapper {
+  opacity: 0;
 }
