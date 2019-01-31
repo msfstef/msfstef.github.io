@@ -21,17 +21,33 @@
 
 .page-enter-active .landing.item {
   opacity: 1;
+  pointer-events: none;
+}
+
+
+@keyframes logoHeaderToLanding {
+  0%   {transform:translate(
+                    calc( 20px + 5vmax - 50vw), 
+                    calc( 5vmax - 20vh)) 
+                    rotate(0deg);}
+  25%  {transform:translate(
+                    calc( 20px + 5vmax - 50vw), 
+                    calc( 5vmax - 20vh)) 
+                    rotate(-30deg);}
+  100% {transform:translate(
+                  0,
+                  0)
+                  rotate(360deg);}
 }
 
 .page-enter .landing.item.logo {
   position: relative;
   opacity: 1;
-  transform: translate(calc( 20px + 5vmax - 50vw), 
-                        calc( 5vmax - 20vh)) 
-              rotate(180deg);
+  animation-name: logoHeaderToLanding;
+  animation-duration: 0.6s;
   width: 40px;
-  transition: width 0.6s ease-in, 
-              transform 0.6s ease-in,
+  transition: width 0.45s ease-in;
+  transition-delay: 0.15s;
 }
 
 .page-enter-active .landing.item.logo {
