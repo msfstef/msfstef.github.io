@@ -24,7 +24,7 @@ class App extends Component {
                   classNames="page"
                   timeout={{
                     enter: 1000,
-                    exit: 1000,
+                    exit: 500,
                   }}
                 >
                   <Route
