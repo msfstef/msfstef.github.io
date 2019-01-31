@@ -52,6 +52,21 @@
     float:left;
 }
 
+
+@keyframes logoNudge {
+    0%   {transform:rotate(0deg);}
+    20%  {transform:rotate(5deg);}
+    40%   {transform:rotate(-5deg);}
+    60%  {transform:rotate(5deg);}
+    80%  {transform:rotate(-5deg);}
+    100% {transform:rotate(0deg);}
+}
+
+.navbar.logo:hover {
+    animation-name: logoNudge;
+    animation-duration: .5s;
+}
+
 .navbar.menuicon{
     float:right;
 }
@@ -69,6 +84,21 @@
     margin-bottom: 6px;
     transition: 0.4s;
 }
+
+.menuicon:hover .bar1, 
+.menuicon:hover .bar2, 
+.menuicon:hover .bar3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.menuicon.change:hover .bar1, 
+.menuicon.change:hover .bar2, 
+.menuicon.change:hover .bar3 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
 
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
