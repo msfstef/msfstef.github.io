@@ -1,20 +1,40 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
-.page {
-  height: 100vh;
-  position: fixed;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.page-enter {
+.page-enter .Contact {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 
 }
-.page-enter-active {
+.page-enter-active .Contact {
   opacity: 1;
+}
+
+.page-enter .landing.item {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  transition-delay: 0.6s;
+}
+
+.page-enter-active .landing.item {
+  opacity: 1;
+}
+
+.page-enter .landing.item.logo {
+  position: relative;
+  opacity: 1;
+  transform: translate(calc( 20px + 5vmax - 50vw), 
+                        calc( 5vmax - 20vh)) 
+              rotate(180deg);
+  width: 40px;
+  transition: width 0.6s ease-in, 
+              transform 0.6s ease-in,
+}
+
+.page-enter-active .landing.item.logo {
+  transform: none;
+  width: 30vmin;
 }

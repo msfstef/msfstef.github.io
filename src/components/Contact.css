@@ -1,15 +1,15 @@
 .Contact {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(6, 1fr);
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vmax;
     width: 100%;
 }
 
 .contactHeadings {
-    grid-column: 2;
-    grid-row: 3;
     width: 60vmin;
     margin-bottom: 3em;
 }
@@ -23,8 +23,6 @@
 }
 
 .contactForm {
-    grid-column: 2;
-    grid-row: 4;
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-rows: repeat(3, auto);

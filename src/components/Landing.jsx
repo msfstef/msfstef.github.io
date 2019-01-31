@@ -16,10 +16,11 @@ class Landing extends Component {
 
     render() {
         return (
-            <div className='wrapper Landing'>
-                <img className={"landing item logo " + (this.state.logoActive?"active":"")}
+            <div className='Landing'>
+            <img className={"landing item logo " + (this.state.logoActive?"active":"")}
                     onClick={() => {this.logoHandleClick()}}
                     src={'/assets/logo.svg'} alt="msfstef logo"/>
+            <div className='landingWrapper'>
                 <Link className='landing item work' to="/work">Portfolio</Link>
                 <Link className='landing item about' to="/about">About</Link>
                 <Link className='landing item contact' to="/contact">Contact</Link>
@@ -39,6 +40,7 @@ class Landing extends Component {
                         <i className="fa fa-envelope"></i>
                     </a>
                 </div>
+            </div>
             </div>
         );
     }

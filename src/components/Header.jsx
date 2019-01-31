@@ -5,7 +5,6 @@ import './Header.css';
 class Header extends Component {
     state = {
         toggle: false,
-        logo_clicked: false
     }
     
     toggleMenu = () => {
@@ -19,7 +18,7 @@ class Header extends Component {
         }
 
         return (
-            <div className={"Header " + (this.state.toggle?"change":"")}
+            <div className={"Header" + (this.state.toggle?" change":" ")}
                 onClick={()=>{if(this.state.toggle){this.toggleMenu()}}}>
                 <Link className='landingLink' to="/">
                     <img className="navbar logo"

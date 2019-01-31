@@ -42,8 +42,8 @@
 }
 
 .navbar {
-    padding: 2.5%;
-    margin: 2.5%;
+    padding: 2.5vmax;
+    margin: 2.5vmax;
     pointer-events: auto;
 }
 
