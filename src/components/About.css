@@ -1,0 +1,49 @@
+.About {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.aboutPic {
+    width:50vw;
+    max-width: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: grayscale(40%);
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.aboutText {
+    font-size: 4vmin;
+}
+
+.aboutSocial {
+    font-size: 7vmin;
+}
+
+.aboutSocialItem {
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+}
+
+.aboutSocialItem:link {
+    text-decoration: none;
+}
+
+.aboutSocialItem:link, .aboutSocialItem:visited {
+    color: black;
+}
+  
+.aboutSocialItem:hover, .aboutSocialItem:active {
+    color: grey;
+}
