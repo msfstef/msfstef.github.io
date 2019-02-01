@@ -6,14 +6,19 @@ class About extends Component {
         return (
             <div className="About">
             <div className="aboutWrapper">
-                <img className="aboutPic landscape"
+                <div className="aboutPicContainer">
+                <img className="aboutPic"
                     src="/assets/face_square.jpg"
-                    alt="my face" />
+                    alt="my face"/>
+                <img className="aboutPicLogo"
+                    src="/assets/logo.svg"
+                    alt="logo"/>
+                </div>
                 <p className="aboutText">
-                My name is Stefanos Mousafeiris, and I'm a 
+                My name is <b>Stefanos Mousafeiris</b>, and I'm a 
                 Greek-Italian physicist turned software developer. 
                 <br/><br/>
-                More info at some point - currently working on my portfolio.
+                Currently working on my portfolio.
                 </p>
                 <div className='aboutSocial'>
                     <a className='aboutSocialItem'

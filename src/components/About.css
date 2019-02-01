@@ -14,6 +14,10 @@
 
 }
 
+.aboutPiContainer {
+
+}
+
 .aboutPic {
     width:50vw;
     max-width: 50vh;
@@ -21,6 +25,28 @@
     filter: grayscale(40%);
     border-radius: 50%;
     margin-bottom: 1em;
+    z-index: 1;
+}
+
+.aboutPicLogo {
+    position: absolute;
+    opacity: 0;
+    width: 20vw;
+    max-width: 25vh;
+    z-index: 2;
+    transform: translate(-37.5vh,9vh);
+}
+
+@keyframes logoFlashing {
+    0%   {opacity: 0;}
+    50% {opacity: 0.6;}
+    100% {opacity: 0;}
+}
+
+.aboutPicLogo:hover {
+    animation-name: logoFlashing;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 .aboutText {
