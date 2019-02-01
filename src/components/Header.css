@@ -4,13 +4,22 @@
     z-index:1;
     width: 100%;
     height: 100%;
-    transition: background-color 0.5s;
+    transition: opacity 0.5s, background-color 0.5s;
 }
 
 .Header.change {
     pointer-events: auto;
     visibility: visible;
     background-color: rgba(190, 190, 190, 0.9);
+}
+
+.Header.hide {
+    pointer-events: none;
+    opacity: 0
+}
+
+.Header.hide .navbar.logo {
+    opacity: 0;
 }
 
 

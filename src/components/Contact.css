@@ -1,18 +1,45 @@
-.Contact {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vmax;
-    min-height: 40em;
-    max-height: 100vh;
-    width: 100%;
+@media screen  and (max-width:900px) and (orientation:portrait) {
+    .Contact {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
 }
+
+
+@media screen  and (max-width:900px) and (orientation:landscape) {
+    .Contact {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;  
+    }
+
+    .contactHeadings {
+        margin-top: 10vmax;  
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .Contact {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+}
+
 
 .contactHeadings {
     width: 60vmin;
-    margin-bottom: 3em;
+    margin-bottom: 3em;  
 }
 
 .contactTitle{

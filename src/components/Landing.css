@@ -1,14 +1,21 @@
 .Landing{
+    position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.landingCentering{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 .landing.logo {
     position:relative;
     width: 30vmin;
     max-width: 200px;
-    margin-bottom: 2vh;
-    margin-top: 20vh;
+    margin-bottom: 2vmin;
 }
 
 @keyframes logoRotate {
@@ -29,25 +36,27 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-bottom: 20vh;
 }
 
 
 .landingWrapper .landing.item {
-    margin: 1vh;
+    margin: 1.5vmin;
 }
 
 
 .landing.item{
+    line-height: 5vmin;
     font-size: 5vmin;
     font-weight: bold;
     font-family: "Helvetica"
 }
 
 .landing.item.social{
-    margin-top: 2vmin;
+    line-height: 7vmin;
     font-size: 7vmin;
-    margin: 2vmin;
+    margin-top: 3vmin;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
 }
 
 .landing.item:link {

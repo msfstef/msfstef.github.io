@@ -17,6 +17,7 @@ class Landing extends Component {
     render() {
         return (
             <div className='Landing'>
+            <div className='landingCentering'>
             <img className={"landing item logo " + (this.state.logoActive?"active":"")}
                     onClick={() => {this.logoHandleClick()}}
                     src={'/assets/logo.svg'} alt="msfstef logo"/>
@@ -40,6 +41,7 @@ class Landing extends Component {
                         <i className="fa fa-envelope"></i>
                     </a>
                 </div>
+            </div>
             </div>
             </div>
         );

@@ -12,18 +12,19 @@ class Header extends Component {
     }
     
     render() {
-        console.log(window.location.pathname)
-        if (window.location.hash === '#/') {
-            return <div></div>
-        }
-
         return (
-            <div className={"Header" + (this.state.toggle?" change":" ")}
+            <div className={"Header" 
+                            + (this.state.toggle?" change":" ")
+                            + ((window.location.hash === '#/')?" hide":"")}
                 onClick={()=>{if(this.state.toggle){this.toggleMenu()}}}>
                 <Link className='landingLink' to="/">
                     <img className="navbar logo"
                         onClick={()=> {
                             if(this.state.toggle){this.toggleMenu()};
+                            // For Safari
+                            document.body.scrollTop = 0; 
+                            // For Chrome, Firefox, IE and Opera
+                            document.documentElement.scrollTop = 0;
                             }}
                         src={'/assets/logo.svg'} alt="msfstef logo"/>
                 </Link>
