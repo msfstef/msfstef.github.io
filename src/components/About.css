@@ -21,16 +21,15 @@
     filter: grayscale(40%);
     border-radius: 50%;
     margin-bottom: 1em;
-    z-index: 1;
 }
 
 .aboutPicLogo {
     position: absolute;
-    opacity: 0.5;
+    opacity: 0;
     width: 25vw;
     max-width: 25vw;
-    z-index: 2;
     transform: translate(-37.5vw, 9vw);
+    transition: opacity 1s;
 }
 
 
@@ -52,19 +51,29 @@
     100% {opacity: 0;}
 }
 
-
-.aboutPicLogo.clicked {
-    animation-name: logoFlashing;
-    animation-duration: 1.5s;
-    animation-iteration-count: 2;
+@media only screen and (max-width: 768px) {
+    .aboutPicLogo.clicked {
+        animation-name: logoFlashing;
+        animation-duration: 1.5s;
+        animation-iteration-count: 2;
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
+    .aboutPicLogo.clicked {
+        opacity: 0.6;
+    }
+
+    .aboutPicLogo.clicked:hover {
+        animation-name:none;
+    }
+
     .aboutPicLogo:hover {
         animation-name: logoFlashing;
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
+
     }
 }
 

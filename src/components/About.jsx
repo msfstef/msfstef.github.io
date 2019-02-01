@@ -8,7 +8,7 @@ class About extends Component {
 
     clickPic = ()=>{
         this.setState({clicked : true});
-        setTimeout(this.setState({clicked : false}), 2000);
+        setTimeout(()=>{this.setState({clicked : false})}, 3000);
     }
 
     render() {
