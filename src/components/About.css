@@ -16,7 +16,7 @@
 
 .aboutPic {
     width:50vw;
-    max-width: 50vh;
+    max-width: 50vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     filter: grayscale(40%);
     border-radius: 50%;
@@ -26,11 +26,24 @@
 
 .aboutPicLogo {
     position: absolute;
-    opacity: 0;
-    width: 20vw;
-    max-width: 25vh;
+    opacity: 0.5;
+    width: 25vw;
+    max-width: 25vw;
     z-index: 2;
-    transform: translate(-37.5vh,9vh);
+    transform: translate(-37.5vw, 9vw);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .aboutPicLogo {
+        width: 25vh;
+        max-width: 25vh;
+        transform: translate(-37.5vh, 9vh);
+    }
+    .aboutPic {
+        width:50vh;
+        max-width: 50vh;
+    }
 }
 
 @keyframes logoFlashing {
@@ -39,11 +52,22 @@
     100% {opacity: 0;}
 }
 
-.aboutPicLogo:hover {
+
+.aboutPicLogo.clicked {
     animation-name: logoFlashing;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .aboutPicLogo:hover {
+        animation-name: logoFlashing;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+}
+
 
 .aboutText {
     font-size: 4vmin;

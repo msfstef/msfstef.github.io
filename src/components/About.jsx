@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import './About.css';
 
 class About extends Component {
+    state = {
+        clicked: false
+    }
+
+    clickPic = ()=>{
+        this.setState({clicked : true});
+        setTimeout(this.setState({clicked : false}), 2000);
+    }
+
     render() {
         return (
             <div className="About">
@@ -9,10 +18,17 @@ class About extends Component {
                 <div className="aboutPicContainer">
                 <img className="aboutPic"
                     src="/assets/face_square.jpg"
-                    alt="my face"/>
-                <img className="aboutPicLogo"
+                    alt="my face"
+                    />
+                <img className={"aboutPicLogo" + (this.state.clicked?" clicked":" ")}
                     src="/assets/logo.svg"
-                    alt="logo"/>
+                    alt="logo"
+                    onClick={()=>{
+                            if(!this.state.clicked){
+                                this.clickPic();
+                            }
+                        }
+                    }/>
                 </div>
                 <p className="aboutText">
                 My name is <b>Stefanos Mousafeiris</b>, and I'm a 
