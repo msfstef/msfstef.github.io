@@ -60,7 +60,7 @@
 }
 
 .contactEmail {
-    width: 60vmin;
+    width: 80vmin;
     max-width: 20em;
     grid-column: span 3;
 
@@ -71,7 +71,7 @@
 }
 
 .contactText {
-    width: 60vw;
+    width: 80vw;
     max-width: 50em;
     height: 12em;
     max-height: 40vmin;
