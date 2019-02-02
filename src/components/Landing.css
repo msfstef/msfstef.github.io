@@ -6,7 +6,12 @@
 
 .landingCentering{
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 80vmin;
+    
+    align-items: center;
     top: 50%;
     transform: translateY(-50%)
 }

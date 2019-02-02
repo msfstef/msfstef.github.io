@@ -52,17 +52,13 @@
                     calc( 20px + 5vmax - 50vw), 
                     /* calculating size of landing box */
                     calc( 5vmax + 
-                        ((7*1.5vmin + 3vmin + 
-                          3*5vmin + 7vmin + 2vmin + 
-                          1.32045*40px) / 2) - 50vh ))
+                        (80vmin / 2) - 50vh ))
                     rotate(0deg);}
   25%  {transform:translate(
                     calc( 20px + 5vmax - 50vw), 
                     /* calculating size of landing box */
                     calc( 5vmax + 
-                        ((7*1.5vmin + 3vmin + 
-                          3*5vmin + 7vmin + 2vmin + 
-                          1.32045*40px) / 2) - 50vh ))
+                        (80vmin / 2) - 50vh ))
                     rotate(-30deg);}
   100% {transform:translate(
                   0,
