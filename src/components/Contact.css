@@ -38,16 +38,16 @@
 
 
 .contactHeadings {
-    width: 60vmin;
+    width: 90vmin;
     margin-bottom: 3em;  
 }
 
 .contactTitle{
-    font-size: 2em;
+    font-size: 5vmin;
 }
 
 .contactDesc{
-    font-size: 1em;
+    font-size: 4vmin;
 }
 
 .contactForm {

@@ -12,8 +12,7 @@ class Contact extends Component {
                     <p className='contactDesc'>
                     Feel free to contact me for any
                     collaboration or project that
-                    you may have in mind by filling
-                    the form below.
+                    you may have in mind.
                     </p>
                 </div>
                 <form className='contactForm' 
