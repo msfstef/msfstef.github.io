@@ -8,7 +8,7 @@ class WorkItem extends Component {
             <div className='WorkItem'>
                 <a className={this.props.itemName + ' worklink'}
                     target="_blank" rel="noopener noreferrer" 
-                    href="https://msfstef.github.io/headbattle"> 
+                    href={this.props.link}>
                 {/*
                 <Link className={this.props.itemName + ' worklink'}
                         to={"/" + this.props.itemName}>
