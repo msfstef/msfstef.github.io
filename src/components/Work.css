@@ -10,10 +10,29 @@
     grid-column: span 9;
 }
 
-@media only screen and (min-width: 768px) {
-    .WorkItem {
-        grid-column: span 3;
+@media only screen and (min-width: 1025px) {
+    .Work.wrapper {
+        display: block;
+        text-align: left;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
+
+    .Work.wrapper.active .WorkItem {
+        pointer-events: none;
+    }
+    
+    .WorkItem {
+        display: inline-block;
+        white-space: normal;
+        text-align: center;
+        height: 100%;
+        width: 500px;
+    }
+    
 }
 
 
