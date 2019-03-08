@@ -29,9 +29,13 @@ class Work extends Component {
 
         slider.addEventListener('mousedown', (e) => {
             isDown = true;
-            slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
+            setTimeout(()=>{
+                if (isDown) {
+                    slider.classList.add('active');
+                    startX = e.pageX - slider.offsetLeft;
+                    scrollLeft = slider.scrollLeft;
+                }
+            }, 100)
         });
         slider.addEventListener('mouseleave', () => {
             isDown = false;
@@ -63,7 +67,6 @@ class Work extends Component {
                 itemTitle='Headbattle'
                 itemDesc='A plain JS 1v1 football inspired game.'
                 link="https://msfstef.github.io/headbattle"/>
-
             </div>
         );
     }
