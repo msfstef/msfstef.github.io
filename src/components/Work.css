@@ -2,12 +2,18 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
-    height:100%;
     z-index: -1;
 }
 
 .WorkItem {
     grid-column: span 9;
+    width: 100%;
+    height: auto;
+}
+
+#listdivider {
+    width: 100vw;
+    border-top: 5px solid black
 }
 
 @media only screen and (min-width: 1025px) {
@@ -19,18 +25,23 @@
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-    }
 
-    .Work.wrapper.active .WorkItem {
+    }  
+
+    .Work.wrapper.active a {
         pointer-events: none;
     }
     
     .WorkItem {
         display: inline-block;
         white-space: normal;
-        text-align: center;
+        text-align: center; 
         height: 100%;
-        width: 500px;
+        width: min-content;
+    }
+
+    #listdivider {
+        display: none;
     }
     
 }

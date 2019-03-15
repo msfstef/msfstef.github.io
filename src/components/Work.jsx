@@ -27,26 +27,42 @@ class Work extends Component {
         var startX;
         var scrollLeft;
 
+
+        function preventClick (e) {
+            e.preventDefault();
+        }
+        
+
         slider.addEventListener('mousedown', (e) => {
             isDown = true;
-            setTimeout(()=>{
-                if (isDown) {
-                    slider.classList.add('active');
-                    startX = e.pageX - slider.offsetLeft;
-                    scrollLeft = slider.scrollLeft;
-                }
-            }, 100)
+            scrollLeft = slider.scrollLeft;
+            if (isDown) {
+                startX = e.pageX - slider.offsetLeft;
+                slider.classList.add('active');
+                
+            }
         });
+
         slider.addEventListener('mouseleave', () => {
             isDown = false;
             slider.classList.remove('active');
+
+            //slider.removeEventListener('click', preventClick)
         });
+
         slider.addEventListener('mouseup', () => {
             isDown = false;
             slider.classList.remove('active');
+            setTimeout( ()=> 
+               slider.removeEventListener('click', preventClick), 10)
+
         });
+
         slider.addEventListener('mousemove', (e) => {
             if(!isDown) return;
+
+            slider.addEventListener('click', preventClick)
+
             e.preventDefault();
             const x = e.pageX - slider.offsetLeft;
             const walk = (x - startX) * 2; //scroll-fast
@@ -56,17 +72,23 @@ class Work extends Component {
 
     render() {
         return (
-            <div id="WorkWrapper" className='Work wrapper'>
+            <div id="WorkWrapper" className='Work wrapper' refresh={Date.now()}>
                 <WorkItem
                 itemName='crosspix' 
                 itemTitle='CrossPiX'
                 itemDesc='Web app to convert pictures to cross-stitch patterns.'
                 link='https://msfstef.github.io/CrossPiX' />
                 <WorkItem
+                itemName='standupper' 
+                itemTitle='Standupper'
+                itemDesc='React Native mobile productivity tool for stand-up comedians.'
+                link='https://msfstef.github.io/Standupper' />
+                <WorkItem
                 itemName='headbattle'
                 itemTitle='Headbattle'
                 itemDesc='A plain JS 1v1 football inspired game.'
                 link="https://msfstef.github.io/headbattle"/>
+                <div id="listdivider"></div>
             </div>
         );
     }
