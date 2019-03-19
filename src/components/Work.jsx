@@ -84,6 +84,12 @@ class Work extends Component {
                 itemDesc='React Native mobile productivity tool for stand-up comedians.'
                 link='https://msfstef.github.io/Standupper' />
                 <WorkItem
+                itemName='flopornot'
+                itemTitle='Flop or Not'
+                itemDesc='A React web quiz about movie profitability.'
+                link="https://msfstef.github.io/FlopOrNot"/>
+                <div id="listdivider"></div>
+                <WorkItem
                 itemName='headbattle'
                 itemTitle='Headbattle'
                 itemDesc='A plain JS 1v1 football inspired game.'
