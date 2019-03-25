@@ -74,11 +74,6 @@ class Work extends Component {
         return (
             <div id="WorkWrapper" className='Work wrapper' refresh={Date.now()}>
                 <WorkItem
-                itemName='crosspix' 
-                itemTitle='CrossPiX'
-                itemDesc='Web app to convert pictures to cross-stitch patterns.'
-                link='https://msfstef.github.io/CrossPiX' />
-                <WorkItem
                 itemName='standupper' 
                 itemTitle='Standupper'
                 itemDesc='React Native mobile productivity tool for stand-up comedians.'
@@ -86,9 +81,13 @@ class Work extends Component {
                 <WorkItem
                 itemName='flopornot'
                 itemTitle='Flop or Not'
-                itemDesc='A React web quiz about movie profitability.'
+                itemDesc='A React web and mobile quiz about movie profitability.'
                 link="https://msfstef.github.io/FlopOrNot"/>
-                <div id="listdivider"></div>
+                <WorkItem
+                itemName='crosspix' 
+                itemTitle='CrossPiX'
+                itemDesc='Web app to convert pictures to cross-stitch patterns.'
+                link='https://msfstef.github.io/CrossPiX' />
                 <WorkItem
                 itemName='headbattle'
                 itemTitle='Headbattle'
