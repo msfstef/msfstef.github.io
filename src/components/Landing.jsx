@@ -37,7 +37,7 @@ class Landing extends Component {
                         <i className="fa fa-github"></i>
                     </a>
                     <a className='landing item social'
-                        href="mailto:msfstef@gmail.com"> 
+                        href="mailto:contact@msfstef.dev"> 
                         <i className="fa fa-envelope"></i>
                     </a>
                 </div>
